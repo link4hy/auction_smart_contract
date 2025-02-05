@@ -66,7 +66,7 @@ contract EncryptedAuction {
         emit Bid(msg.sender, msg.value);
     }
 
-    function start(uint _openingBid, uint _duration) external onlyOwner {
+    function start(uint _duration) external onlyOwner {
         // validations
         require(!started, "Auction has already started");
 
